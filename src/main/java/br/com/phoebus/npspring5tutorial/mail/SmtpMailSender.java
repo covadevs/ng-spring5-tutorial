@@ -1,7 +1,5 @@
 package br.com.phoebus.npspring5tutorial.mail;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
@@ -9,8 +7,6 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 public class SmtpMailSender implements MailSender {
-
-    private static Log log = LogFactory.getLog(SmtpMailSender.class);
 
     private JavaMailSender javaMailSender;
 
